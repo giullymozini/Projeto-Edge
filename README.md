@@ -1,16 +1,44 @@
 # Projeto cp1 de EDGE 
 
 Integrantes: 
-Artur Alves Tenca rm:
-Igor Brunelli rm:
-Ian Monteiro rm:
-Giuliana rm:
+
+Artur Alves Tenca RM: 555171
+Igor Brunelli RM: 555035
+Ian Monteiro RM: 558652
+Giuliana RM:557597
 
 Turma: 1ESPH 
 Professor Cabrini 
 
 
+Lista de material: 
 
+U1
+1
+ Arduino Uno R3
+D1
+1
+Red LED
+
+
+R2
+1
+10 kΩ Resistor
+R3, R4, R5
+3
+220 kΩ Resistor
+D2
+1
+Yellow LED
+D3
+1
+Green LED
+R1
+1
+ Photoresistor
+PIEZO1
+1
+ Piezo
 
 
 
@@ -18,20 +46,37 @@ Professor Cabrini
 
 
 Descrição do case:
-  O case é sobre uma vinheria tradicional, que antes da pandemia estava operando como loja física, no periodo pandemico, a mudança para um portal de e-commerce foi necessaria, porém a unica exigência, era   que a loja virtual conseguisse criar uma expriencia similar á do atendimento presencial. 
-  Outras exigêcias são sobre, a luminosidade que influência o gosto dos vinhos, principalmente os brancos e os espumantes, então a pedido da Vinheria, a luz deveria ser muito suave; a temperatura, o calor excessivo termina com a vida do vinho rapidamente, a melhor temperatura constante seria de 13 graus; e a umidade, a falta dela pode levar ao ressecamento do vedame ou estragar o rotulo, o ideal seria 70% (com variações entre 60% a 80%).
+
+
+  O caso é sobre uma vinheria tradicional, que antes da pandemia estava operando como loja física, no período pandêmico, a mudança para um portal de e-commerce foi necessária, porém a única exigência, era   que a loja virtual conseguisse criar uma experiência similar à do atendimento presencial. 
+
+  Outras exigências são sobre, a luminosidade que influencia o gosto dos vinhos, principalmente os brancos e os espumantes, então a pedido da Vinheria, a luz deveria ser muito suave; a temperatura, o calor excessivo termina com a vida do vinho rapidamente, a melhor temperatura constante seria de 13 graus; e a umidade, a falta dela pode levar ao ressecamento do vedame ou estragar o rótulo, o ideal seria 70% (com variações entre 60% a 80%).
 
   
 Descrição do projeto:
-  Nos da DataSphere sugerimos que o projeto seja um sistema de monitoramento a ser instalado no ambiente em que os vinhos são armazenados, sugerimos que o projeto seja feito em partes, a primeira seria elaborar um sistema usando Arduino que terá como objetivo capturar as informações da luminosidade do ambiente.
+
+
+  Nós da DataSphere sugerimos que o projeto seja um sistema de monitoramento a ser instalado no ambiente em que os vinhos são armazenados, sugerimos que o projeto seja feito em partes, a primeira seria elaborar um sistema usando Arduino que terá como objetivo capturar as informações da luminosidade do ambiente.
 
   
 Descrição do objetivo: 
-   O sistema Arduino tera um led verde, que significará que a luminosidade do ambiente esta OK, um led amarelo para indicar um alerta e um led vermelho para indicar problema e junto instalado uma buzina que se acionará a cada 3 segundos e ficará ativa ate o nivel normalizar. 
-   No software foi utilizado o seguinte codigo e o nosso prototipo foi usado no Tinkercad: 
+
+   O sistema Arduino terá um led verde, que significará que a luminosidade do ambiente está OK, um led amarelo para indicar um alerta e um led vermelho para indicar problema e junto instalado uma buzina que se acionará a cada 3 segundos e ficará ativa até o nível normalizar. 
+   No software foi utilizado o seguinte código e o nosso protótipo foi usado no Tinkercad: 
 
 
- Codigo Comentado: 
+
+
+(projeto no Tinkercad)
+
+
+
+
+
+
+(Circuito eletrônico)
+
+ Código Comentado: 
 
  int LEDV = 8;   // Define o pino digital 8 para o LED vermelho
 int LEDA = 12;  // Define o pino digital 12 para o LED amarelo
@@ -75,4 +120,6 @@ void loop() {
   
   delay(500); // Aguarda 500 milissegundos antes de ler o sensor novamente
 }
+
+
 
