@@ -1,5 +1,22 @@
 # Projeto cp1 de EDGE 
 
+Integrantes: 
+Artur Alves Tenca rm:
+Igor Brunelli rm:
+Ian Monteiro rm:
+Giuliana rm:
+
+Turma: 1ESPH 
+Professor Cabrini 
+
+
+
+
+
+
+
+
+
 Descrição do case:
   O case é sobre uma vinheria tradicional, que antes da pandemia estava operando como loja física, no periodo pandemico, a mudança para um portal de e-commerce foi necessaria, porém a unica exigência, era   que a loja virtual conseguisse criar uma expriencia similar á do atendimento presencial. 
   Outras exigêcias são sobre, a luminosidade que influência o gosto dos vinhos, principalmente os brancos e os espumantes, então a pedido da Vinheria, a luz deveria ser muito suave; a temperatura, o calor excessivo termina com a vida do vinho rapidamente, a melhor temperatura constante seria de 13 graus; e a umidade, a falta dela pode levar ao ressecamento do vedame ou estragar o rotulo, o ideal seria 70% (com variações entre 60% a 80%).
