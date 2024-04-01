@@ -34,17 +34,20 @@ void setup() {
 void loop() {
    int LDR = analogRead(A0); // Lê o valor do sensor LDR conectado ao pino analógico A0
    int i = map(LDR, 0, 1023, 0, 100);//mapeia o LDR e muda seus valores para irem de 0 a 100  
+   
      Serial.println(i); 
   if(i < 80){              // Se o LDR estiver menor que 890
     digitalWrite(LEDG, HIGH); // Liga o LED verde
     digitalWrite(LEDA, LOW);  // Desliga o LED amarelo
     digitalWrite(LEDV, LOW);  // Desliga o LED vermelho
   }
+  
   else if (92 > i) {       // Se o LDR estiver menor que 957
     digitalWrite(LEDA, HIGH); // Liga o LED amarelo
     digitalWrite(LEDG, LOW);  // Desliga o LED verde
     digitalWrite(LEDV, LOW);  // Desliga o LED vermelho
   }
+  
   else {                       // Se o LDR estiver maior que 957
     digitalWrite(LEDA, LOW);   // Desliga o LED amarelo
     digitalWrite(LEDV, HIGH);  // Liga o LED vermelho
@@ -52,6 +55,7 @@ void loop() {
     tone(BUZZER, 2000, 2000);  // Emite um som com frequência de 1000Hz por 1 segundo
     delay(1000);               // Espera por 1 segundo
   }
+  
   delay(500); // Aguarda 500 milissegundos antes de ler o sensor novamente
 }
 
